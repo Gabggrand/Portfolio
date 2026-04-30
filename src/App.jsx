@@ -9,6 +9,24 @@ function App() {
   const [mensagem, setMensagem] = useState('');
   const [menuAberto, setMenuAberto] = useState(false);
 
+  const skills = [
+    { name: "Java", icon: "devicon-java-plain" },
+    { name: "Spring Boot", icon: "devicon-spring-plain" },
+    { name: "MySQL", icon: "devicon-mysql-plain" },
+    { name: "REST API", icon: "devicon-fastapi-plain" },
+
+    { name: "Postman", icon: "devicon-postman-plain" },
+    { name: "Insomnia", icon: "devicon-insomnia-plain" },
+    { name: "Git", icon: "devicon-git-plain" },
+    { name: "GitHub", icon: "devicon-github-original" },
+
+    { name: "React", icon: "devicon-react-original" },
+    { name: "JavaScript", icon: "devicon-javascript-plain" },
+    { name: "HTML", icon: "devicon-html5-plain" },
+    { name: "CSS", icon: "devicon-css3-plain" },
+    { name: "Tailwind", icon: "devicon-tailwindcss-plain" },
+  ];
+
   const handleEnviar = (e) => {
     e.preventDefault();
 
@@ -75,10 +93,10 @@ function App() {
               Gabriel Gaspar
             </h1>
             <h2 className="text-white text-xl md:text-2xl">
-              Desenvolvedor Front-End
+              Desenvolvedor Back-End
             </h2>
             <a
-              href="/Gabriel-Front-End.pdf"
+              href="/Cv-Gabriel.pdf"
               download
               className="text-white bg-[#F15A24] hover:bg-[#ff9169] w-[150px] h-[40px] rounded-xl font-bold flex items-center justify-center transition duration-300 hover:scale-105"
               aria-label="Baixar currículo em PDF"
@@ -102,130 +120,30 @@ function App() {
           </div>
           <div className='flex flex-col items-center justify-center w-full md:w-3/6 gap-4 p-4 md:p-0'>
             <h1 className='text-[#F15A24] text-3xl md:text-5xl font-bold'>Sobre</h1>
-            <p className='text-white text-base md:text-xl text-center px-4 md:px-10'>Sou Gabriel Gaspar, desenvolvedor front-end com formação em Análise e Desenvolvimento de Sistemas. Tenho experiência prática com HTML, CSS, JavaScript, React e Tailwind CSS. Busco sempre aprimorar minhas habilidades para criar interfaces modernas, responsivas e que proporcionem uma ótima experiência ao usuário.</p>
+            <p className='text-white text-base md:text-xl text-center px-4 md:px-10'>Desenvolvedor Backend Java com foco em APIs REST utilizando Spring Boot e integração com MySQL. Experiência prática com CRUD, validação de dados, tratamento de erros e arquitetura em camadas. Possui background em frontend como diferencial.</p>
           </div>
         </section>
         <section className='w-full min-h-screen text-center py-12 autoScrollEffect' id='habilidades'>
-          <h1 className='text-[#F15A24] text-3xl md:text-5xl font-bold mb-10 md:mb-20'>Habilidades</h1>
+          <h1 className='text-[#F15A24] text-3xl md:text-5xl font-bold mb-10 md:mb-20'>
+            Habilidades
+          </h1>
           <div className='w-full max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-12 justify-items-center items-center px-4'>
-            <div className='w-[100px] h-[100px] md:w-[130px] md:h-[130px] border-2 border-[#F15A24] rounded-md flex justify-center items-center bg-[#f15b241c] hover:scale-110 hover:shadow-[0_0_40px_#F15A24] transition duration-300'>
-              <svg className='text-[#F15A24] w-16 h-16 md:w-24 md:h-24' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                <path fill="currentColor" d="m3 2l1.578 17.824L12 22l7.467-2.175L21 2zm14.049 6.048H9.075l.172 2.016h7.697l-.626 6.565l-4.246 1.381l-4.281-1.455l-.288-2.932h2.024l.16 1.411l2.4.815l2.346-.763l.297-3.005H7.416l-.562-6.05h10.412z" />
-              </svg>
-            </div>
-            <div className='w-[100px] h-[100px] md:w-[130px] md:h-[130px] border-2 border-[#F15A24] rounded-md flex justify-center items-center bg-[#f15b241c] hover:scale-110 hover:shadow-[0_0_40px_#F15A24] transition duration-300'>
-              <svg className='text-[#F15A24] w-16 h-16 md:w-24 md:h-24' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                <path fill="currentColor" d="M7.502 0h2.578v1.078h-1.5v1.078h1.5v1.078H7.502zm3.093 0h2.579v.938h-1.5v.187h1.5v2.156h-2.579v-.984h1.5v-.188h-1.5zm3.095 0h2.577v.938h-1.5v.187h1.5v2.156H13.69v-.984h1.5v-.188h-1.5z" />
-                <path fill="currentColor" fill-rule="evenodd" d="m11.991 24l-6.944-1.928L3 4.717h18L18.954 22.07zM7.047 12.573l.191 2.128h7.377l-.247 2.76l-2.374.642h-.002l-2.37-.64l-.152-1.697H7.333l.298 3.342l4.36 1.21l4.367-1.21l.532-5.964l.052-.571l.384-4.309H6.664l.194 2.129h8.136l-.194 2.18z" clip-rule="evenodd" />
-              </svg>
-            </div>
-            <div className='w-[100px] h-[100px] md:w-[130px] md:h-[130px] border-2 border-[#F15A24] rounded-md flex justify-center items-center bg-[#f15b241c] hover:scale-110 hover:shadow-[0_0_40px_#F15A24] transition duration-300'>
-              <svg className='text-[#F15A24] w-16 h-16 md:w-24 md:h-24' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                <path fill="currentColor"
-                  d="M6 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3zm7.334 13.055q1.08.87 2.156.858q.66 0 1.012-.242a.75.75 0 0 0 .341-.66a.97.97 0 0 0-.34-.748q-.352-.307-1.332-.616q-1.177-.34-1.815-.88q-.626-.54-.638-1.507q0-.913.792-1.529q.77-.616 1.97-.616q1.672 0 2.683.814l-.77 1.199a2.6 2.6 0 0 0-.935-.462a3.2 3.2 0 0 0-.946-.165q-.57 0-.913.209q-.34.21-.34.55q0 .374.417.638q.42.254 1.43.561q1.221.363 1.738.968t.517 1.54q0 .957-.737 1.65q-.726.682-2.112.715q-1.815 0-3.036-1.089zm-5.53.638q.352.22.847.22q.517 0 .858-.297q.34-.308.341-1.067v-5.302h1.485v5.588q-.033 1.298-.748 1.87a2.5 2.5 0 0 1-.891.484a3.3 3.3 0 0 1-.935.143q-.825 0-1.463-.286q-.682-.307-1.144-1.089l1.034-.847q.285.385.616.583" />
-              </svg>
-            </div>
-            <div className='w-[100px] h-[100px] md:w-[130px] md:h-[130px] border-2 border-[#F15A24] rounded-md flex justify-center items-center bg-[#f15b241c] hover:scale-110 hover:shadow-[0_0_40px_#F15A24] transition duration-300'>
-              <svg className='text-[#F15A24] w-16 h-16 md:w-24 md:h-24' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                <path fill="currentColor" d="M8.667 9.417a2.583 2.583 0 1 0 0 5.166h2.583V9.417zm2.583-1.5H8.667a2.583 2.583 0 0 1 0-5.167h2.583zm1.5-5.167v5.167h2.583a2.584 2.584 0 0 0 0-5.167zm2.583 6.666a2.583 2.583 0 0 0-2.583 2.542v.083a2.583 2.583 0 1 0 2.583-2.625m-6.666 6.667a2.584 2.584 0 1 0 2.583 2.584v-2.584z" clip-rule="evenodd" />
-              </svg>
-            </div>
-            <div className='w-[100px] h-[100px] md:w-[130px] md:h-[130px] border-2 border-[#F15A24] rounded-md flex justify-center items-center bg-[#f15b241c] hover:scale-110 hover:shadow-[0_0_40px_#F15A24] transition duration-300'>
-              <svg className='text-[#F15A24] w-16 h-16 md:w-24 md:h-24' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                <path fill="currentColor" d="M2.6 10.59L8.38 4.8l1.69 1.7c-.24.85.15 1.78.93 2.23v5.54c-.6.34-1 .99-1 1.73a2 2 0 0 0 2 2a2 2 0 0 0 2-2c0-.74-.4-1.39-1-1.73V9.41l2.07 2.09c-.07.15-.07.32-.07.5a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2c-.18 0-.35 0-.5.07L13.93 7.5a1.98 1.98 0 0 0-1.15-2.34c-.43-.16-.88-.2-1.28-.09L9.8 3.38l.79-.78c.78-.79 2.04-.79 2.82 0l7.99 7.99c.79.78.79 2.04 0 2.82l-7.99 7.99c-.78.79-2.04.79-2.82 0L2.6 13.41c-.79-.78-.79-2.04 0-2.82" />
-              </svg>
-            </div>
-            <div className='w-[100px] h-[100px] md:w-[130px] md:h-[130px] border-2 border-[#F15A24] rounded-md flex justify-center items-center bg-[#f15b241c] hover:scale-110 hover:shadow-[0_0_40px_#F15A24] transition duration-300'>
-              <svg className='text-[#F15A24] w-16 h-16 md:w-24 md:h-24' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                <path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2" />
-              </svg>
-            </div>
-            <div className='w-[100px] h-[100px] md:w-[130px] md:h-[130px] border-2 border-[#F15A24] rounded-md flex justify-center items-center bg-[#f15b241c] hover:scale-110 hover:shadow-[0_0_40px_#F15A24] transition duration-300'>
-              <svg className='text-[#F15A24] w-16 h-16 md:w-24 md:h-24' role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <title>React</title>
-                <path fill="currentColor" d="M14.23 12.004a2.236 2.236 0 0 1-2.235 2.236 2.236 2.236 0 0 1-2.236-2.236 2.236 2.236 0 0 1 2.235-2.236 2.236 2.236 0 0 1 2.236 2.236zm2.648-10.69c-1.346 0-3.107.96-4.888 2.622-1.78-1.653-3.542-2.602-4.887-2.602-.41 0-.783.093-1.106.278-1.375.793-1.683 3.264-.973 6.365C1.98 8.917 0 10.42 0 12.004c0 1.59 1.99 3.097 5.043 4.03-.704 3.113-.39 5.588.988 6.38.32.187.69.275 1.102.275 1.345 0 3.107-.96 4.888-2.624 1.78 1.654 3.542 2.603 4.887 2.603.41 0 .783-.09 1.106-.275 1.374-.792 1.683-3.263.973-6.365C22.02 15.096 24 13.59 24 12.004c0-1.59-1.99-3.097-5.043-4.032.704-3.11.39-5.587-.988-6.38-.318-.184-.688-.277-1.092-.278zm-.005 1.09v.006c.225 0 .406.044.558.127.666.382.955 1.835.73 3.704-.054.46-.142.945-.25 1.44-.96-.236-2.006-.417-3.107-.534-.66-.905-1.345-1.727-2.035-2.447 1.592-1.48 3.087-2.292 4.105-2.295zm-9.77.02c1.012 0 2.514.808 4.11 2.28-.686.72-1.37 1.537-2.02 2.442-1.107.117-2.154.298-3.113.538-.112-.49-.195-.964-.254-1.42-.23-1.868.054-3.32.714-3.707.19-.09.4-.127.563-.132zm4.882 3.05c.455.468.91.992 1.36 1.564-.44-.02-.89-.034-1.345-.034-.46 0-.915.01-1.36.034.44-.572.895-1.096 1.345-1.565zM12 8.1c.74 0 1.477.034 2.202.093.406.582.802 1.203 1.183 1.86.372.64.71 1.29 1.018 1.946-.308.655-.646 1.31-1.013 1.95-.38.66-.773 1.288-1.18 1.87-.728.063-1.466.098-2.21.098-.74 0-1.477-.035-2.202-.093-.406-.582-.802-1.204-1.183-1.86-.372-.64-.71-1.29-1.018-1.946.303-.657.646-1.313 1.013-1.954.38-.66.773-1.286 1.18-1.868.728-.064 1.466-.098 2.21-.098zm-3.635.254c-.24.377-.48.763-.704 1.16-.225.39-.435.782-.635 1.174-.265-.656-.49-1.31-.676-1.947.64-.15 1.315-.283 2.015-.386zm7.26 0c.695.103 1.365.23 2.006.387-.18.632-.405 1.282-.66 1.933-.2-.39-.41-.783-.64-1.174-.225-.392-.465-.774-.705-1.146zm3.063.675c.484.15.944.317 1.375.498 1.732.74 2.852 1.708 2.852 2.476-.005.768-1.125 1.74-2.857 2.475-.42.18-.88.342-1.355.493-.28-.958-.646-1.956-1.1-2.98.45-1.017.81-2.01 1.085-2.964zm-13.395.004c.278.96.645 1.957 1.1 2.98-.45 1.017-.812 2.01-1.086 2.964-.484-.15-.944-.318-1.37-.5-1.732-.737-2.852-1.706-2.852-2.474 0-.768 1.12-1.742 2.852-2.476.42-.18.88-.342 1.356-.494zm11.678 4.28c.265.657.49 1.312.676 1.948-.64.157-1.316.29-2.016.39.24-.375.48-.762.705-1.158.225-.39.435-.788.636-1.18zm-9.945.02c.2.392.41.783.64 1.175.23.39.465.772.705 1.143-.695-.102-1.365-.23-2.006-.386.18-.63.406-1.282.66-1.933zM17.92 16.32c.112.493.2.968.254 1.423.23 1.868-.054 3.32-.714 3.708-.147.09-.338.128-.563.128-1.012 0-2.514-.807-4.11-2.28.686-.72 1.37-1.536 2.02-2.44 1.107-.118 2.154-.3 3.113-.54zm-11.83.01c.96.234 2.006.415 3.107.532.66.905 1.345 1.727 2.035 2.446-1.595 1.483-3.092 2.295-4.11 2.295-.22-.005-.406-.05-.553-.132-.666-.38-.955-1.834-.73-3.703.054-.46.142-.944.25-1.438zm4.56.64c.44.02.89.034 1.345.034.46 0 .915-.01 1.36-.034-.44.572-.895 1.095-1.345 1.565-.455-.47-.91-.993-1.36-1.565z" />
-              </svg>
-            </div>
-            <div className='w-[100px] h-[100px] md:w-[130px] md:h-[130px] border-2 border-[#F15A24] rounded-md flex justify-center items-center bg-[#f15b241c] hover:scale-110 hover:shadow-[0_0_40px_#F15A24] transition duration-300'>
-              <svg className='text-[#F15A24] w-16 h-16 md:w-24 md:h-24' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                <path fill="currentColor" fill-rule="evenodd"
-                  d="M7 9.969q1-4.063 5-4.063c4 0 4.5 3.047 6.5 3.555q2 .508 3.5-1.524Q21 12 17 12c-4 0-4.5-3.047-6.5-3.555Q8.5 7.938 7 9.97m-5 6.094Q3 12 7 12c4 0 4.5 3.047 6.5 3.555q2 .507 3.5-1.524q-1 4.063-5 4.063c-4 0-4.5-3.047-6.5-3.555q-2-.508-3.5 1.524"
-                  clip-rule="evenodd" />
-              </svg>
-            </div>
+            {skills.map((skill, index) => (
+              <div
+                key={index}
+                className='w-[100px] h-[120px] md:w-[130px] md:h-[150px] border-2 border-[#F15A24] rounded-md flex flex-col justify-center items-center bg-[#f15b241c] hover:scale-110 hover:shadow-[0_0_40px_#F15A24] transition duration-300'
+              >
+                <i className={`${skill.icon} text-[#F15A24] text-5xl md:text-7xl`}></i>
+                <p className='mt-2 text-sm md:text-base text-white'>
+                  {skill.name}
+                </p>
+              </div>
+            ))}
           </div>
         </section>
         <section className='w-full min-h-screen py-20' id='projetos'>
           <h1 className='text-[#F15A24] text-center text-3xl md:text-5xl font-bold mb-10 md:mb-20 autoScrollEffect'>Projetos</h1>
           <div className='flex flex-col gap-10 md:gap-20 items-center'>
-            <div className='flex flex-col md:flex-row w-full h-auto md:h-[400px] items-center justify-center gap-6 md:gap-10 px-4 md:px-10 autoScrollEffect'>
-              <div className='w-full md:w-1/2 flex justify-center'>
-                <div className='relative w-full md:w-[90%] h-[200px] md:h-[350px] max-w-[650px] group'>
-                  <img
-                    className='w-full h-full object-cover border-4 border-[#F15A24] rounded-md group-hover:brightness-50 transition duration-300'
-                    src='img/instagram.png'
-                    alt="Projeto Instagram"
-                  />
-                  <div className='absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 hover:shadow-[0_0_35px_#F15A24] transition duration-300'>
-                    <a
-                      href='https://github.com/Gabggrand/Curso-de-TailwindCSS'
-                      target='_blank'
-                      rel='noopener noreferrer'
-                      className='bg-white p-2 rounded-full hover:bg-[#F15A24] hover:text-white transition'
-                    >
-                      <i className="fa-brands fa-github text-2xl"></i>
-                    </a>
-                    <a
-                      href='https://social-login-ui.netlify.app/'
-                      target='_blank'
-                      rel='noopener noreferrer'
-                      className='bg-white p-2 rounded-full hover:bg-[#F15A24] hover:text-white transition'
-                    >
-                      <i className="fa-solid fa-up-right-from-square text-2xl"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className='w-full md:w-1/2 flex flex-col justify-center items-center text-center'>
-                <h1 className='text-[#F15A24] mb-3 md:mb-5 text-2xl md:text-3xl'>Instagram</h1>
-                <p className='text-white text-sm md:text-lg px-2 md:px-4'>Projeto prático criado em curso para replicar funcionalidades básicas do Instagram. Desenvolvido para aprendizado de manipulação de dados, componentes React e estilização com CSS. Interface limpa e responsiva, simulando uma rede social.</p>
-              </div>
-            </div>
-            <div className='flex flex-col md:flex-row w-full h-auto md:h-[400px] items-center justify-center gap-6 md:gap-10 px-4 md:px-10 autoScrollEffect'>
-              <div className='w-full md:w-1/2 flex justify-center'>
-                <div className='relative w-full md:w-[90%] h-[200px] md:h-[350px] max-w-[650px] group'>
-                  <img
-                    className='w-full h-full object-cover border-4 border-[#F15A24] rounded-md group-hover:brightness-50 transition duration-300'
-                    src='img/planejamento-de-viagem.png'
-                    alt="Projeto Planejamento de Viagem"
-                  />
-                  <div className='absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 hover:shadow-[0_0_35px_#F15A24] transition duration-300'>
-                    <a
-                      href='https://github.com/Gabggrand/Planejar-Viagem'
-                      target='_blank'
-                      rel='noopener noreferrer'
-                      className='bg-white p-2 rounded-full hover:bg-[#F15A24] hover:text-white transition'
-                    >
-                      <i className="fa-brands fa-github text-2xl"></i>
-                    </a>
-                    <a
-                      href='https://easytripplan.netlify.app/'
-                      target='_blank'
-                      rel='noopener noreferrer'
-                      className='bg-white p-2 rounded-full hover:bg-[#F15A24] hover:text-white transition'
-                    >
-                      <i className="fa-solid fa-up-right-from-square text-2xl"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className='w-full md:w-1/2 flex flex-col justify-center items-center text-center'>
-                <h1 className='text-[#F15A24] mb-3 md:mb-5 text-2xl md:text-3xl'>Planejamento de Viagem</h1>
-                <p className='text-white text-sm md:text-lg px-2 md:px-4'>
-                  Projeto desenvolvido para simular o planejamento de uma viagem, com campos de destino, datas e orçamento. A interface é responsiva e foi construída com HTML, CSS e JavaScript, priorizando usabilidade e visual limpo.
-                </p>
-              </div>
-            </div>
             <div className='flex flex-col md:flex-row w-full h-auto md:h-[400px] items-center justify-center gap-6 md:gap-10 px-4 md:px-10 autoScrollEffect'>
               <div className='w-full md:w-1/2 flex justify-center'>
                 <div className='relative w-full md:w-[90%] h-[200px] md:h-[350px] max-w-[650px] group'>
@@ -330,32 +248,91 @@ function App() {
                 <div className='relative w-full md:w-[90%] h-[200px] md:h-[350px] max-w-[650px] group'>
                   <img
                     className='w-full h-full object-cover border-4 border-[#F15A24] rounded-md group-hover:brightness-50 transition duration-300'
-                    src='img/Dev-Tradutor.png'
-                    alt="Projeto Dev-Tradutor"
+                    src='img/Tasks API (Spring Boot + MySQL).png'
+                    alt="Projeto Tasks API"
                   />
-                  <div className='absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 hover:shadow-[0_0_35px_#F15A24] transition duration-300'>
+                  <div className='absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition duration-300'>
                     <a
-                      href='https://github.com/Gabggrand/Tradutor-Dev'
+                      href='https://github.com/Gabggrand/Tasks-API'
                       target='_blank'
                       rel='noopener noreferrer'
                       className='bg-white p-2 rounded-full hover:bg-[#F15A24] hover:text-white transition'
                     >
                       <i className="fa-brands fa-github text-2xl"></i>
                     </a>
-                    <a
-                      href='https://dev-translator.netlify.app/'
-                      target='_blank'
-                      rel='noopener noreferrer'
-                      className='bg-white p-2 rounded-full hover:bg-[#F15A24] hover:text-white transition'
-                    >
-                      <i className="fa-solid fa-up-right-from-square text-2xl"></i>
-                    </a>
+
                   </div>
                 </div>
               </div>
               <div className='w-full md:w-1/2 flex flex-col justify-center items-center text-center'>
-                <h1 className='text-[#F15A24] mb-3 md:mb-5 text-2xl md:text-3xl'>Dev-Tradutor</h1>
-                <p className='text-white text-sm md:text-lg px-2 md:px-4'>Projeto desenvolvido durante curso de React, focado em tradução automática de textos entre idiomas. Criado para praticar conceitos como componentes, estados e consumo de APIs externas. Interface simples, funcional e responsiva.</p>
+                <h1 className='text-[#F15A24] mb-3 md:mb-5 text-2xl md:text-3xl'>
+                  Tasks API
+                </h1>
+                <p className='text-white text-sm md:text-lg px-2 md:px-4'>
+                  API REST desenvolvida com Spring Boot para gerenciamento de tarefas, com operações CRUD completas. Integração com MySQL, validação de dados e tratamento de erros, seguindo arquitetura em camadas.
+                </p>
+              </div>
+            </div>
+            <div className='flex flex-col md:flex-row w-full h-auto md:h-[400px] items-center justify-center gap-6 md:gap-10 px-4 md:px-10 autoScrollEffect'>
+              <div className='w-full md:w-1/2 flex justify-center'>
+                <div className='relative w-full md:w-[90%] h-[200px] md:h-[350px] max-w-[650px] group'>
+                  <img
+                    className='w-full h-full object-cover border-4 border-[#F15A24] rounded-md group-hover:brightness-50 transition duration-300'
+                    src='img/Gerenciador De Tarefas.png'
+                    alt="Projeto Tasks API"
+                  />
+                  <div className='absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition duration-300'>
+                    <a
+                      href='https://github.com/Gabggrand/task-manager'
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      className='bg-white p-2 rounded-full hover:bg-[#F15A24] hover:text-white transition'
+                    >
+                      <i className="fa-brands fa-github text-2xl"></i>
+                    </a>
+
+                  </div>
+                </div>
+              </div>
+              <div className='w-full md:w-1/2 flex flex-col justify-center items-center text-center'>
+                <h1 className='text-[#F15A24] mb-3 md:mb-5 text-2xl md:text-3xl'>
+                  Gerenciador de Tarefas | Java
+                </h1>
+                <p className='text-white text-sm md:text-lg px-2 md:px-4'>
+                  Aplicação desenvolvida em Java puro para gerenciamento de tarefas, permitindo criar, listar, concluir e remover registros, com persistência de dados em arquivo.
+                  O projeto aplica conceitos de Programação Orientada a Objetos, manipulação de arquivos e estruturas de dados, com foco em organização e boas práticas na linguagem.
+                </p>
+              </div>
+            </div>
+            <div className='flex flex-col md:flex-row w-full h-auto md:h-[400px] items-center justify-center gap-6 md:gap-10 px-4 md:px-10 autoScrollEffect'>
+              <div className='w-full md:w-1/2 flex justify-center'>
+                <div className='relative w-full md:w-[90%] h-[200px] md:h-[350px] max-w-[650px] group'>
+                  <img
+                    className='w-full h-full object-cover border-4 border-[#F15A24] rounded-md group-hover:brightness-50 transition duration-300'
+                    src='img/Tasks API (Spring Boot).png'
+                    alt="Projeto Tasks API"
+                  />
+                  <div className='absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition duration-300'>
+                    <a
+                      href='https://github.com/Gabggrand/Tasks-API'
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      className='bg-white p-2 rounded-full hover:bg-[#F15A24] hover:text-white transition'
+                    >
+                      <i className="fa-brands fa-github text-2xl"></i>
+                    </a>
+
+                  </div>
+                </div>
+              </div>
+              <div className='w-full md:w-1/2 flex flex-col justify-center items-center text-center'>
+                <h1 className='text-[#F15A24] mb-3 md:mb-5 text-2xl md:text-3xl'>
+                  Tasks API | Spring Boot
+                </h1>
+                <p className='text-white text-sm md:text-lg px-2 md:px-4'>
+                  API REST desenvolvida com Spring Boot para gerenciamento de tarefas, permitindo criar, listar, buscar, atualizar e excluir registros.
+                  O projeto utiliza arquitetura em camadas e foi desenvolvido com foco em práticas de desenvolvimento backend e construção de APIs escaláveis.
+                </p>
               </div>
             </div>
           </div>
