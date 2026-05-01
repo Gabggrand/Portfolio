@@ -96,7 +96,7 @@ function App() {
               Desenvolvedor Back-End
             </h2>
             <a
-              href="/Cv-Gabriel.pdf"
+              href="/CV-Gabriel.pdf"
               download
               className="text-white bg-[#F15A24] hover:bg-[#ff9169] w-[150px] h-[40px] rounded-xl font-bold flex items-center justify-center transition duration-300 hover:scale-105"
               aria-label="Baixar currículo em PDF"
